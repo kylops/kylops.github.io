@@ -1,5 +1,387 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400, 500, 600, 700);
+/*** Fonts ***/
+/***** Open Sans Font *****/
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-ExtraBold.eot");
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-ExtraBold.woff") format("woff"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-ExtraBold.ttf") format("truetype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-ExtraBold.svg#open_sansextrabold") format("svg");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-ExtraBoldItalic.eot");
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-ExtraBoldItalic.woff") format("woff"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-ExtraBoldItalic.ttf") format("truetype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-ExtraBoldItalic.svg#open_sansextrabold_italic") format("svg");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Bold.eot");
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Bold.woff") format("woff"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Bold.ttf") format("truetype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Bold.svg#open_sansbold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-BoldItalic.eot");
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-BoldItalic.woff") format("woff"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-BoldItalic.ttf") format("truetype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-BoldItalic.svg#open_sansbold_italic") format("svg");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Semibold.eot");
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Semibold.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Semibold.woff") format("woff"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Semibold.ttf") format("truetype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Semibold.svg#open_sanssemibold") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-SemiboldItalic.eot");
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-SemiboldItalic.woff") format("woff"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-SemiboldItalic.ttf") format("truetype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-SemiboldItalic.svg#open_sanssemibold_italic") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Regular.eot");
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Regular.woff") format("woff"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Regular.ttf") format("truetype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Regular.svg#open_sansregular") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Italic.eot");
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Italic.woff") format("woff"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Italic.ttf") format("truetype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Italic.svg#open_sansitalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Light.eot");
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Light.woff") format("woff"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Light.ttf") format("truetype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-Light.svg#open_sanslight") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-LightItalic.eot");
+  src: url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-LightItalic.woff") format("woff"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-LightItalic.ttf") format("truetype"), url("/wp-content/themes/wundertheme2018/assets/fonts/open-sans//OpenSans-LightItalic.svg#open_sanslight_italic") format("svg");
+  font-weight: 200;
+  font-style: italic; }
+
 body {
-  background-color: red; }
+  margin: 0;
+  padding: 0;
+  background: #555555;
+  background-size: auto auto; }
+
+p {
+  display: inline;
+  margin-before: 0;
+  margin-after: 0;
+  margin-start: 0;
+  margin-end: 0; }
+
+#container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.selections {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 75%;
+  padding: 20px;
+  box-shadow: 0 5px 0 black;
+  cursor: pointer; }
+
+.selections:hover {
+  box-shadow: 0 3px 0 black; }
+
+.selections:active {
+  box-shadow: none; }
+
+#palette1 {
+  background: #7bb38e;
+  border-radius: 20px;
+  left: 15%; }
+
+#palette2 {
+  background: #f4f1d7;
+  border-radius: 20px;
+  left: 25%; }
+
+#palette3 {
+  background: #f8ab65;
+  border-radius: 20px;
+  left: 35%; }
+
+#palette4 {
+  background: #f15c4c;
+  border-radius: 20px;
+  left: 45%; }
+
+#author {
+  position: absolute;
+  top: 35%;
+  left: 55%;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: #555555;
+  opacity: 0.85;
+  box-shadow: 0 6px 0 0 #7bb38e, 0 12px 0 0 #f4f1d7, 0 18px 0 0 #f8ab65, 0 24px 0 0 #f15c4c; }
+
+/* #author:hover {
+  animation: nameHover 1s linear infinite alternate;
+} */
+.featuredtext {
+  font: 400 5.9em "Raleway", sans-serif; }
+
+#firstname {
+  text-shadow: 0 5px 0 black;
+  color: #7bb38e;
+  font-size: 4.2em; }
+
+#lastname {
+  text-shadow: 0 8px 0 black;
+  color: #f8ab65;
+  font-weight: bold; }
+
+.swatch {
+  position: absolute; }
+
+.horizontal {
+  width: 100%; }
+
+.vertical {
+  height: 100%; }
+
+.row1 {
+  height: 14%;
+  top: 14%;
+  background-color: #7bb38e;
+  box-shadow: 0 0 3px 3px #7bb38e;
+  animation: row1movement 6s linear infinite; }
+
+.row2 {
+  height: 24%;
+  top: 43%;
+  background-color: #f4f1d7;
+  box-shadow: 0 0 3px 3px #f4f1d7;
+  animation: row2movement 8s linear infinite; }
+
+.row3 {
+  height: 11%;
+  top: 78%;
+  background-color: #f8ab65;
+  box-shadow: 0 0 3px 3px #f8ab65;
+  animation: row3movement 10s linear infinite; }
+
+.row4 {
+  height: 11%;
+  top: 22%;
+  background-color: #f15c4c;
+  box-shadow: 0 0 3px 3px #f15c4c;
+  animation: row4movement 12s linear infinite; }
+
+.col1 {
+  width: 21%;
+  left: 12%;
+  background-color: #f15c4c;
+  box-shadow: 0 0 3px 3px #f15c4c;
+  animation: col1movement 12s linear infinite; }
+
+.col2 {
+  width: 13%;
+  left: 44%;
+  background-color: #f8ab65;
+  box-shadow: 0 0 3px 3px #f8ab65;
+  animation: col2movement 10s linear infinite; }
+
+.col3 {
+  width: 11%;
+  left: 81%;
+  background-color: #f4f1d7;
+  box-shadow: 0 0 3px 3px #f4f1d7;
+  animation: col3movement 8s linear infinite; }
+
+.col4 {
+  width: 8%;
+  left: 63%;
+  background-color: #7bb38e;
+  box-shadow: 0 0 3px 3px #7bb38e;
+  animation: col4movement 6s linear infinite; }
+
+@keyframes row1movement {
+  0% {
+    top: 14%;
+    height: 14%;
+    opacity: 1; }
+  20% {
+    top: 25%;
+    height: 22%; }
+  40% {
+    top: 75%;
+    height: 25%; }
+  60% {
+    top: 49%;
+    height: 17%;
+    opacity: 0.25; }
+  80% {
+    top: 23%;
+    height: 8%; } }
+
+@keyframes row2movement {
+  0% {
+    top: 43%;
+    height: 24%;
+    opacity: 1; }
+  20% {
+    top: 32%;
+    height: 11%; }
+  40% {
+    top: 77%;
+    height: 14%; }
+  60% {
+    top: 82%;
+    height: 22%;
+    opacity: 0.5; }
+  80% {
+    top: 59%;
+    height: 18%; } }
+
+@keyframes row3movement {
+  0% {
+    top: 78%;
+    height: 11%;
+    opacity: 1; }
+  20% {
+    top: 54%;
+    height: 13%; }
+  40% {
+    top: 66%;
+    height: 18%; }
+  60% {
+    top: 52%;
+    height: 11%;
+    opacity: 0.4; }
+  80% {
+    top: 69%;
+    height: 15%; } }
+
+@keyframes row4movement {
+  0% {
+    top: 22%;
+    height: 11%;
+    opacity: 1; }
+  20% {
+    top: 9%;
+    height: 19%; }
+  40% {
+    top: 31%;
+    height: 13%; }
+  60% {
+    top: 58%;
+    height: 24%;
+    opacity: 0.25; }
+  80% {
+    top: 27%;
+    height: 15%; } }
+
+@keyframes col1movement {
+  0% {
+    left: 12%;
+    width: 21%;
+    opacity: 1; }
+  20% {
+    left: 25%;
+    width: 22%; }
+  40% {
+    left: 75%;
+    width: 25%; }
+  60% {
+    left: 49%;
+    width: 17%;
+    opacity: 0.4; }
+  80% {
+    left: 23%;
+    width: 21%; } }
+
+@keyframes col2movement {
+  0% {
+    left: 44%;
+    width: 13%;
+    opacity: 1; }
+  20% {
+    left: 32%;
+    width: 11%; }
+  40% {
+    left: 77%;
+    width: 14%; }
+  60% {
+    left: 82%;
+    width: 22%;
+    opacity: 0.6; }
+  80% {
+    left: 59%;
+    width: 18%; } }
+
+@keyframes col3movement {
+  0% {
+    left: 81%;
+    width: 11%;
+    opacity: 1; }
+  20% {
+    left: 54%;
+    width: 13%; }
+  40% {
+    left: 66%;
+    width: 18%;
+    opacity: 0.3; }
+  60% {
+    left: 52%;
+    width: 11%; }
+  80% {
+    left: 69%;
+    width: 15%; } }
+
+@keyframes col4movement {
+  0% {
+    left: 63%;
+    width: 8%;
+    opacity: 1; }
+  20% {
+    left: 9%;
+    width: 19%; }
+  40% {
+    left: 31%;
+    width: 13%;
+    opacity: 0.5; }
+  60% {
+    left: 58%;
+    width: 24%; }
+  80% {
+    left: 27%;
+    width: 15%; } }
+
+@keyframes nameHover {
+  0% {
+    box-shadow: 0 24px 0 0 black; }
+  25% {
+    box-shadow: 0 18px 0 0 black; }
+  50% {
+    box-shadow: 0 12px 0 0 black; }
+  75% {
+    box-shadow: 0 6px 0 0 black; }
+  100% {
+    box-shadow: 0 2px 0 0 black; } }
 
 
 /*# sourceMappingURL=style.min.css.map*/

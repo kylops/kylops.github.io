@@ -1,3 +1,371 @@
-body{
-    background-color: red;
+@import "fonts.scss";
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400, 500, 600, 700');
+
+// color scheme from kuler.adobe.com
+// https://kuler.adobe.com/Seattle-color-theme-3044702/
+$swatch1: #555555;
+$swatch2: #7bb38e;
+$swatch3: #f4f1d7;
+$swatch4: #f8ab65;
+$swatch5: #f15c4c;
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $swatch1;
+  background-size: auto auto;
+}
+p {
+  display: inline;
+  margin-before: 0;
+  margin-after: 0;
+  margin-start: 0;
+  margin-end: 0;
+}
+#container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.selections {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 75%;
+  padding: 20px;
+  box-shadow: 0 5px 0 black;
+  cursor: pointer;
+}
+.selections:hover {
+  box-shadow: 0 3px 0 black;
+}
+.selections:active {
+  box-shadow: none;
+}
+#palette1 {
+  background: $swatch2;
+  border-radius: 20px;
+  left: 15%;
+}
+#palette2 {
+  background: $swatch3;
+  border-radius: 20px;
+  left: 25%;
+}
+#palette3 {
+  background: $swatch4;
+  border-radius: 20px;
+  left: 35%;
+}
+#palette4 {
+  background: $swatch5;
+  border-radius: 20px;
+  left: 45%;
+}
+#author {
+  position: absolute;
+  top: 35%;
+  left: 55%;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: $swatch1;
+  opacity: 0.85;
+  box-shadow: 0 6px 0 0 $swatch2, 0 12px 0 0 $swatch3, 0 18px 0 0 $swatch4,
+    0 24px 0 0 $swatch5;
+}
+/* #author:hover {
+  animation: nameHover 1s linear infinite alternate;
+} */
+.featuredtext {
+  font: 400 5.9em "Raleway", sans-serif;
+}
+#firstname {
+  text-shadow: 0 5px 0 black;
+  color: $swatch2;
+  font-size: 4.2em;
+}
+#lastname {
+  text-shadow: 0 8px 0 black;
+  color: $swatch4;
+  font-weight: bold;
+}
+.swatch {
+  position: absolute;
+}
+.horizontal {
+  width: 100%;
+}
+.vertical {
+  height: 100%;
+}
+.row1 {
+  height: 14%;
+  top: 14%;
+  background-color: $swatch2;
+  box-shadow: 0 0 3px 3px $swatch2;
+  animation: row1movement 6s linear infinite;
+}
+.row2 {
+  height: 24%;
+  top: 43%;
+  background-color: $swatch3;
+  box-shadow: 0 0 3px 3px $swatch3;
+  animation: row2movement 8s linear infinite;
+}
+.row3 {
+  height: 11%;
+  top: 78%;
+  background-color: $swatch4;
+  box-shadow: 0 0 3px 3px $swatch4;
+  animation: row3movement 10s linear infinite;
+}
+.row4 {
+  height: 11%;
+  top: 22%;
+  background-color: $swatch5;
+  box-shadow: 0 0 3px 3px $swatch5;
+  animation: row4movement 12s linear infinite;
+}
+.col1 {
+  width: 21%;
+  left: 12%;
+  background-color: $swatch5;
+  box-shadow: 0 0 3px 3px $swatch5;
+  animation: col1movement 12s linear infinite;
+}
+.col2 {
+  width: 13%;
+  left: 44%;
+  background-color: $swatch4;
+  box-shadow: 0 0 3px 3px $swatch4;
+  animation: col2movement 10s linear infinite;
+}
+.col3 {
+  width: 11%;
+  left: 81%;
+  background-color: $swatch3;
+  box-shadow: 0 0 3px 3px $swatch3;
+  animation: col3movement 8s linear infinite;
+}
+.col4 {
+  width: 8%;
+  left: 63%;
+  background-color: $swatch2;
+  box-shadow: 0 0 3px 3px $swatch2;
+  animation: col4movement 6s linear infinite;
+}
+
+@keyframes row1movement {
+  0% {
+    top: 14%;
+    height: 14%;
+    opacity: 1;
+  }
+  20% {
+    top: 25%;
+    height: 22%;
+  }
+  40% {
+    top: 75%;
+    height: 25%;
+  }
+  60% {
+    top: 49%;
+    height: 17%;
+    opacity: 0.25;
+  }
+  80% {
+    top: 23%;
+    height: 8%;
+  }
+}
+@keyframes row2movement {
+  0% {
+    top: 43%;
+    height: 24%;
+    opacity: 1;
+  }
+  20% {
+    top: 32%;
+    height: 11%;
+  }
+  40% {
+    top: 77%;
+    height: 14%;
+  }
+  60% {
+    top: 82%;
+    height: 22%;
+    opacity: 0.5;
+  }
+  80% {
+    top: 59%;
+    height: 18%;
+  }
+}
+@keyframes row3movement {
+  0% {
+    top: 78%;
+    height: 11%;
+    opacity: 1;
+  }
+  20% {
+    top: 54%;
+    height: 13%;
+  }
+  40% {
+    top: 66%;
+    height: 18%;
+  }
+  60% {
+    top: 52%;
+    height: 11%;
+    opacity: 0.4;
+  }
+  80% {
+    top: 69%;
+    height: 15%;
+  }
+}
+@keyframes row4movement {
+  0% {
+    top: 22%;
+    height: 11%;
+    opacity: 1;
+  }
+  20% {
+    top: 9%;
+    height: 19%;
+  }
+  40% {
+    top: 31%;
+    height: 13%;
+  }
+  60% {
+    top: 58%;
+    height: 24%;
+    opacity: 0.25;
+  }
+  80% {
+    top: 27%;
+    height: 15%;
+  }
+}
+@keyframes col1movement {
+  0% {
+    left: 12%;
+    width: 21%;
+    opacity: 1;
+  }
+  20% {
+    left: 25%;
+    width: 22%;
+  }
+  40% {
+    left: 75%;
+    width: 25%;
+  }
+  60% {
+    left: 49%;
+    width: 17%;
+    opacity: 0.4;
+  }
+  80% {
+    left: 23%;
+    width: 21%;
+  }
+}
+@keyframes col2movement {
+  0% {
+    left: 44%;
+    width: 13%;
+    opacity: 1;
+  }
+  20% {
+    left: 32%;
+    width: 11%;
+  }
+  40% {
+    left: 77%;
+    width: 14%;
+  }
+  60% {
+    left: 82%;
+    width: 22%;
+    opacity: 0.6;
+  }
+  80% {
+    left: 59%;
+    width: 18%;
+  }
+}
+@keyframes col3movement {
+  0% {
+    left: 81%;
+    width: 11%;
+    opacity: 1;
+  }
+  20% {
+    left: 54%;
+    width: 13%;
+  }
+  40% {
+    left: 66%;
+    width: 18%;
+    opacity: 0.3;
+  }
+  60% {
+    left: 52%;
+    width: 11%;
+  }
+  80% {
+    left: 69%;
+    width: 15%;
+  }
+}
+@keyframes col4movement {
+  0% {
+    left: 63%;
+    width: 8%;
+    opacity: 1;
+  }
+  20% {
+    left: 9%;
+    width: 19%;
+  }
+  40% {
+    left: 31%;
+    width: 13%;
+    opacity: 0.5;
+  }
+  60% {
+    left: 58%;
+    width: 24%;
+  }
+  80% {
+    left: 27%;
+    width: 15%;
+  }
+}
+@keyframes nameHover {
+  0% {
+    box-shadow: 0 24px 0 0 black;
+  }
+  25% {
+    box-shadow: 0 18px 0 0 black;
+  }
+  50% {
+    box-shadow: 0 12px 0 0 black;
+  }
+  75% {
+    box-shadow: 0 6px 0 0 black;
+  }
+  100% {
+    box-shadow: 0 2px 0 0 black;
+  }
 }
