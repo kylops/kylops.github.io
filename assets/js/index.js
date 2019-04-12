@@ -1,7 +1,7 @@
 /* Index.js start */
 require('../scss/main.scss');
 
-document.addEventListener("DOMContentLoaded", function() {
+$(document).ready(function() {
     // using an array to store some color themes.  there is probably a better way to do this.
     var colorBank = new Array()
     
@@ -57,45 +57,45 @@ document.addEventListener("DOMContentLoaded", function() {
     var index = 0;
     
     function swapColors() {
-      document.getelementbyid("container").css({"background":colorBank[index]});
-      document.getelementbyid("author").css({"background":colorBank[index],
+      $("#container").css({"background":colorBank[index]});
+      $("#author").css({"background":colorBank[index],
                         "box-shadow":"0 6px 0 0 " + colorBank[index+1] +
                        ", 0 12px 0 0 " + colorBank[index+2] +
                        ", 0 18px 0 0 " + colorBank[index+3] +
                        ", 0 24px 0 0 " + colorBank[index+4] });
       index++;
-      document.getelementbyid("row1").css({"background-color":colorBank[index], 
+      $("#row1").css({"background-color":colorBank[index], 
                       "box-shadow":"0 0 3px 3px " + colorBank[index]});
-      document.getelementbyid("col1").css({"background-color":colorBank[index], 
+      $("#col1").css({"background-color":colorBank[index], 
                       "box-shadow":"0 0 3px 3px " + colorBank[index]});
-      document.getelementbyid("palette1").css({"background-color":colorBank[index]});
-      document.getelementbyid("firstname").css({"color":colorBank[index]});
+      $("#palette1").css({"background-color":colorBank[index]});
+      $("#firstname").css({"color":colorBank[index]});
       index++;
-      document.getelementbyid("row2").css({"background-color":colorBank[index], 
+      $("#row2").css({"background-color":colorBank[index], 
                       "box-shadow":"0 0 3px 3px " + colorBank[index]});
-      document.getelementbyid("col2").css({"background-color":colorBank[index], 
+      $("#col2").css({"background-color":colorBank[index], 
                       "box-shadow":"0 0 3px 3px " + colorBank[index]});
-      document.getelementbyid("palette2").css({"background-color":colorBank[index]});
+      $("#palette2").css({"background-color":colorBank[index]});
       index++;
-      document.getelementbyid("row3").css({"background-color":colorBank[index], 
+      $("#row3").css({"background-color":colorBank[index], 
                       "box-shadow":"0 0 3px 3px " + colorBank[index]});
-      document.getelementbyid("col3").css({"background-color":colorBank[index], 
+      $("#col3").css({"background-color":colorBank[index], 
                       "box-shadow":"0 0 3px 3px " + colorBank[index]});
-      document.getelementbyid("palette3").css({"background-color":colorBank[index]});
-      document.getelementbyid("lastname").css({"color":colorBank[index]});
+      $("#palette3").css({"background-color":colorBank[index]});
+      $("#lastname").css({"color":colorBank[index]});
       index++;
-      document.getelementbyid("row4").css({"background-color":colorBank[index], 
+      $("#row4").css({"background-color":colorBank[index], 
                       "box-shadow":"0 0 3px 3px " + colorBank[index]});
-      document.getelementbyid("col4").css({"background-color":colorBank[index], 
+      $("#col4").css({"background-color":colorBank[index], 
                       "box-shadow":"0 0 3px 3px " + colorBank[index]});
-      document.getelementbyid("palette4").css({"background-color":colorBank[index]});
+      $("#palette4").css({"background-color":colorBank[index]});
       if (index == (colorBank.length-1)) { index = 0; } 
       else { index++; }    
     }
     
     // when button is clicked, swap colors
-    document.getelementbyid("palette1").click(function() { swapColors(); });
-    document.getelementbyid("palette2").click(function() { swapColors(); });
-    document.getelementbyid("palette3").click(function() { swapColors(); });
-    document.getelementbyid("palette4").click(function() { swapColors(); });
+    $("#palette1").click(function() { swapColors(); });
+    $("#palette2").click(function() { swapColors(); });
+    $("#palette3").click(function() { swapColors(); });
+    $("#palette4").click(function() { swapColors(); });
   });
