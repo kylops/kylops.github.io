@@ -125,7 +125,7 @@ p {
   border-radius: 20px;
   left: 45%; }
 
-#author {
+#main-site, #blog-site, #app-site {
   position: absolute;
   top: 35%;
   left: 55%;
@@ -138,18 +138,19 @@ p {
   opacity: 0.85;
   box-shadow: 0 6px 0 0 #7bb38e, 0 12px 0 0 #f4f1d7, 0 18px 0 0 #f8ab65, 0 24px 0 0 #f15c4c; }
 
-/* #author:hover {
+/* #main-site:hover {
   animation: nameHover 1s linear infinite alternate;
 } */
 .featuredtext {
-  font: 400 5.9em "Raleway", sans-serif; }
+  font: 400 5.9em "Raleway", sans-serif;
+  z-index: 999; }
 
-#firstname {
+#firstword {
   text-shadow: 0 5px 0 black;
   color: #7bb38e;
   font-size: 4.2em; }
 
-#lastname {
+#lastword {
   text-shadow: 0 8px 0 black;
   color: #f8ab65;
   font-weight: bold; }
